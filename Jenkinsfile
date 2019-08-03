@@ -3,12 +3,12 @@ pipeline {  agent any
         stage('---clean---') {
             steps {
 
-                mvn 'clean'
+                bat mvn 'clean'
             }
         }
         stage('--test--') {
             steps {
-            mvn 'test'
+               bat mvn 'test'
             }
         }
         }
