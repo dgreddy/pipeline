@@ -11,10 +11,5 @@ pipeline {  agent any
             mvn test
             }
         }
-        stage('--package--') {
-            steps {
-                 mvn package
-           }
         }
-    }
 }
